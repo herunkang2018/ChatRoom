@@ -1,0 +1,25 @@
+1, File Structure:
+
+	haha.h the protocol header
+
+	sernew.c implement the server
+
+	client.c implement the client
+
+	sql.h header for login and register
+
+	sql.c implement for the functions of login and register
+
+	lists.h header for user lists
+
+	lists.c implement for user lists easy to del or add user item
+
+	user.sql create the user info table
+
+	toto: Text File Transfer test
+
+	cet4.jpg: Big Binary File Transfer test
+
+2, System Requirement:
+
+	Mysql 5.5.41 and mysql driver used by C Mysql API
