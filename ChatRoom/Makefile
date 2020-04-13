@@ -1,6 +1,6 @@
-.PHONY: sernew
-client:	client.c haha.h
-	gcc -o client client.c haha.h -g
+.PHONY: server
+client:	client.c msg.h
+	gcc -o client client.c msg.h -g
 
-sernew:	
-	gcc sernew.c haha.h sql.h sql.c lists.h lists.c -lmysqlclient -I/usr/include/mysql -o sernew -g
+server:	
+	gcc server.c msg.h sql.h sql.c lists.h lists.c -lmysqlclient -I/usr/include/mysql -o server -g

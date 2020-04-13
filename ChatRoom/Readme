@@ -1,8 +1,8 @@
 1, File Structure:
 
-	haha.h the protocol header
+	msg.h the protocol header
 
-	sernew.c implement the server
+	server.c implement the server
 
 	client.c implement the client
 
