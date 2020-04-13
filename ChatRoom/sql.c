@@ -2,7 +2,6 @@
 #include <my_global.h>
 #include <mysql.h>
 #include <string.h>
-
 #include "sql.h"
 
 char Auser[20][12];
@@ -32,7 +31,7 @@ int addMsg(char *sid, char *rid, char *msg){
   strcat(query, ")");
 
   conn = mysql_init(NULL);
-  mysql_real_connect(conn, "localhost", "rick", "secret", "chatdb", 0, NULL, 0);
+  mysql_real_connect(conn, "localhost", "runker", "secret", "chatdb", 0, NULL, 0);
 
   mysql_query(conn, query);
 

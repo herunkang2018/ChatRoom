@@ -3,17 +3,14 @@
 #include<errno.h>
 #include<string.h>
 #include<stdlib.h>
-
 #include<sys/types.h>
 #include<sys/socket.h>
 #include<netinet/in.h>
-
 #include <fcntl.h>
 #include <signal.h>
-#include "msg.h"
-
 #include <sys/wait.h>
 #include <sys/time.h>
+#include "msg.h"
 
 #define SER_TCP_PORT "192.168.40.128"
 

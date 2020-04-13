@@ -1,5 +1,6 @@
 #ifndef HAHA_H
 #define HAHA_H
+
 #include<netinet/in.h>
 
 #define C2C_FILE 1

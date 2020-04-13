@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include "msg.h"
+
 typedef struct node{
 	struct cinfos info;
 	struct node * PNext;

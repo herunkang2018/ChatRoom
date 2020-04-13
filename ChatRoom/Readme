@@ -23,3 +23,9 @@
 2, System Requirement:
 
 	Mysql 5.5.41 and mysql driver used by C Mysql API
+	install: sudo apt-get install mysql-server
+	sudo apt-get install mysql-client
+sudo apt-get install libmysqlclient-dev
+sudo service mysql start
+mysql -u root -p
+mysql_config --include
