@@ -23,8 +23,8 @@ mysql> flush privileges;
 
 ### 下载和编译
 ```bash
-git clone https://github.com/hackeryard/ChatRoom.git  
-cd ChatRoom/ChatRoom  
+git clone https://github.com/hackeryard/ChatRoom.git
+cd ChatRoom/src
 make && make server
 ```
 
