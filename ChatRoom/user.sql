@@ -4,4 +4,4 @@ CREATE TABLE user(
 	PRIMARY KEY (uid)
 );
 
-INSERT INTO user(uid, passwd) VALUES ("hacking", "igotyu");
+INSERT INTO user(uid, passwd) VALUES ("testuser", "passwd");
