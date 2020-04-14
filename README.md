@@ -1,9 +1,14 @@
-# Chat-Room-v0.1
-## 用法
-> git clone https://github.com/hackeryard/ChatRoom.git  
-> cd ChatRoom/ChatRoom  
-> make && make server
+# Chat Room
+基于Linux socket的局域网聊天软件
 
+## 设计思想
+
+## 用法
+```bash
+git clone https://github.com/hackeryard/ChatRoom.git  
+cd ChatRoom/ChatRoom  
+make && make server
+```
 ## 客户端
 > ./client 本地IP 本地端口
 
