@@ -10,10 +10,14 @@ cd ChatRoom/ChatRoom
 make && make server
 ```
 ## 客户端
-> ./client 本地IP 本地端口
+```bash
+./client 本地IP 本地端口
+```
 
 ## 服务器
-> ./server
+```bash
+./server
+```
 
 ## 说明
 服务器IP Port在宏定义里面，修改后编译即可
