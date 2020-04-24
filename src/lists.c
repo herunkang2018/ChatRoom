@@ -1,7 +1,7 @@
-#include<stdio.h>
-#include<malloc.h>
-#include<string.h> 
 #include "lists.h"
+#include <malloc.h>
+#include <stdio.h>
+#include <string.h>
 /*
 //client_info
 struct cinfos{
@@ -16,11 +16,10 @@ struct cinfos{
 PNode create_list()
 {
 
-    PNode PHead=malloc(sizeof(Node));
-    PHead->PNext=NULL;
+    PNode PHead = malloc(sizeof(Node));
+    PHead->PNext = NULL;
 
     return PHead;
-
 }
 
 /**
@@ -28,13 +27,12 @@ PNode create_list()
 */
 void traverse(PNode pHead)
 {
-   PNode p=pHead->PNext;
-   while(p!=NULL)
-   {
-       printf("username:%s ip:%d port:%d  \n",p->info.userid, p->info.ip, p->info.port);
-       p=p->PNext;
-   }
-   printf("\n");
+    PNode p = pHead->PNext;
+    while (p != NULL) {
+        printf("username:%s ip:%d port:%d  \n", p->info.userid, p->info.ip, p->info.port);
+        p = p->PNext;
+    }
+    printf("\n");
 }
 /**
 *判断链表是否为空
@@ -42,48 +40,50 @@ void traverse(PNode pHead)
 
 bool isempty(PNode pHead)
 {
-    if(NULL==pHead->PNext)
-    {
-            return true;
-    }else{
-    return false;
+    if (NULL == pHead->PNext) {
+        return true;
+    } else {
+        return false;
     }
 }
 
 ///using username  to search
-struct cinfos get_item(PNode pHead, char * username){
-	PNode p = pHead;
-	while(p!= NULL){
-		p = p->PNext;
-		if(strcmp(username, p->info.userid) == 0){
-			return p->info;
-		}
-	} 
+struct cinfos get_item(PNode pHead, char* username)
+{
+    PNode p = pHead;
+    while (p != NULL) {
+        p = p->PNext;
+        if (strcmp(username, p->info.userid) == 0) {
+            return p->info;
+        }
+    }
 }
 ///using username to remove item
-int remove_item(PNode pHead, char * username){
-	PNode p = pHead;
-	while(p!= NULL){
-		PNode temp = p;
-		p = p->PNext;
-		if(strcmp(username, p->info.userid) == 0){
-			temp->PNext = p->PNext;
-			return 0;
-		}
-	}
-	return -1;//not containter this user
+int remove_item(PNode pHead, char* username)
+{
+    PNode p = pHead;
+    while (p != NULL) {
+        PNode temp = p;
+        p = p->PNext;
+        if (strcmp(username, p->info.userid) == 0) {
+            temp->PNext = p->PNext;
+            return 0;
+        }
+    }
+    return -1; //not containter this user
 }
 ///push_back
-int push_item(PNode pHead, struct cinfos newItem){
-	
-	PNode p = pHead;
-	while(p->PNext != NULL){
-		p = p->PNext;
-	} 
-	PNode newNode = malloc(sizeof(Node));
-	p->PNext = newNode;
-	newNode->info = newItem;
-	newNode->PNext = NULL;
+int push_item(PNode pHead, struct cinfos newItem)
+{
+
+    PNode p = pHead;
+    while (p->PNext != NULL) {
+        p = p->PNext;
+    }
+    PNode newNode = malloc(sizeof(Node));
+    p->PNext = newNode;
+    newNode->info = newItem;
+    newNode->PNext = NULL;
 }
 
 /*
